@@ -1,0 +1,201 @@
+<!DOCTYPE html> <!-- HTML5 standardında bir belge olduğunu belirtir -->
+<html lang="en"> <!-- Sayfa dili İngilizce olarak ayarlandı -->
+    <head>
+        <meta charset="UTF-8"> <!-- Karakter seti UTF-8 olarak belirlendi -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mobil uyumluluk için viewport ayarlarını yapar -->
+
+        <link rel="stylesheet" href="assets/css/styles.css"> <!-- Harici CSS dosyasını projeye dahil eder -->
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'> <!-- Boxicons ikon kütüphanesini yükler -->
+
+        <title>Selman AKÇA Portfolio</title> <!-- Tarayıcı sekmesinde görünecek başlık -->
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header"> <!-- Sabit üst menü alanı -->
+            <nav class="nav bd-grid"> <!-- Grid tabanlı navigasyon çubuğu -->
+                <div>
+                    <a href="#" class="nav__logo">Selman AKÇA</a> <!-- Logo veya marka ismi -->
+                </div>
+
+                <div class="nav__menu" id="nav-menu"> <!-- Menü kapsayıcı (mobil açılır/kapanır) -->
+                    <ul class="nav__list"> <!-- Menü öğeleri listesi -->
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Ana Sayfa</a></li> <!-- Ana sayfa bağlantısı -->
+                        <li class="nav__item"><a href="#about" class="nav__link">Hakkımda</a></li> <!-- Hakkımda bağlantısı -->
+                        <li class="nav__item"><a href="#skills" class="nav__link">Yetenekler</a></li> <!-- Yetenekler bağlantısı -->
+                        <li class="nav__item"><a href="#work" class="nav__link">Projeler</a></li> <!-- Projeler bağlantısı -->
+                        <li class="nav__item"><a href="#contact" class="nav__link">İletişim</a></li> <!-- İletişim bağlantısı -->
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle"> <!-- Mobil menü ikonu -->
+                    <i class='bx bx-menu'></i> <!-- Hamburger menü simgesi -->
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main"> <!-- Ana içerik alanı -->
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home"> <!-- Ana sayfa bölümü -->
+                <div class="home__data"> <!-- Tanıtım metni alanı -->
+                    <h1 class="home__title">Selam,<br>ben <span class="home__title-color">Selman</span><br> Üniversite <br> öğrencisiyim</h1> <!-- Başlık ve ad -->
+                    <a href="#contact" class="button">İletişim</a> <!-- İletişim butonu -->
+                </div>
+
+                <div class="home__social"> <!-- Sosyal medya ikonları -->
+                    <a href="https://www.linkedin.com/in/selman-ak%C3%A7a-630914240/" target="_blank" class="home__social-icon"><i class='bx bxl-linkedin'></i></a> <!-- LinkedIn ikonu -->
+                    <a href="https://www.behance.net/selmanaka2" target="_blank" class="home__social-icon"><i class='bx bxl-behance'></i></a> <!-- Behance ikonu -->
+                    <a href="https://github.com/blackakrep" target="_blank" class="home__social-icon"><i class='bx bxl-github'></i></a> <!-- GitHub ikonu -->
+                </div>
+
+                <div class="home__img"> <!-- Profil resmi ve SVG maskeleme -->
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <!-- SVG konteyner -->
+                        <mask id="mask0" mask-type="alpha"> <!-- Maske tanımı -->
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/> <!-- Maske şekli -->
+                        </mask>
+                        <g mask="url(#mask0)"> <!-- Maske uygulanan grup -->
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/> <!-- Arka plan şekli -->
+                            <image class="home__blob-img" x="50" y="60" href="assets/img/benim.png"/> <!-- Profil resmi -->
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section" id="about"> <!-- Hakkımda bölümü -->
+                <h2 class="section-title">Hakkımda</h2> <!-- Bölüm başlığı -->
+
+                <div class="about__container bd-grid"> <!-- Grid düzeni -->
+                    <div class="about__img">
+                        <img src="assets/img/WhatsApp Görsel 2025-02-24 saat 23.33.01_4825ebe.jpg" alt=""> <!-- Hakkımda görseli -->
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">Selam ben selman</h2> <!-- Alt başlık -->
+                        <p class="about__text">Üniversite Elektronik Teknolojisi bölümü 2. sınıf öğrencisiyim. Elektronik cihazlar ve benzeri konulara ilgi duyuyorum, aynı zamanda Adobe programlarına da ilgi göstermekteyim.</p> <!-- Açıklama metni -->           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills"> <!-- Yetenekler bölümü -->
+                <h2 class="section-title">Yetenekler</h2> <!-- Bölüm başlığı -->
+
+                <div class="skills__container bd-grid"> <!-- Grid içeriği -->         
+                    <div>
+                        <h2 class="skills__subtitle">Profesyonel Yetenekler</h2> <!-- Alt başlık -->
+                        <p class="skills__text">Aşağıdakiler benim uzman oldugum ve ne kadar uzman oldugumla iligili verilerdir.</p> <!-- Açıklama metni -->
+                        <div class="skills__data"> <!-- Yetenek veri bloğu -->
+                            <div class="skills__names"> <!-- İsim ve ikon -->
+                                <i class='bx bxl-adobe skills__icon'></i> <!-- HTML5 ikonu -->
+                                <span class="skills__name">Adobe Photoshop</span> <!-- HTML5 adı -->
+                            </div>
+                            <div class="skills__bar skills__ps"> <!-- Yetenek seviyesi barı -->
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span> <!-- Yüzdelik -->
+                            </div>
+                        </div>
+                        <div class="skills__data"> <!-- CSS3 veri bloğu -->
+                            <div class="skills__names">
+                                <i class='bx bxl-adobe skills__icon'></i> <!-- CSS3 ikonu -->
+                                <span class="skills__name">Adobe After Effects</span> <!-- CSS3 adı -->
+                            </div>
+                            <div class="skills__bar skills__ae"> <!-- Bar -->
+                            </div>
+                            <div>
+                                <span class="skills__percentage">50%</span> <!-- Yüzde -->
+                            </div>
+                        </div>
+                        <div class="skills__data"> <!-- JS veri bloğu -->
+                            <div class="skills__names">
+                                <i class='bx bxl-adobe skills__icon'></i> <!-- JavaScript ikonu -->
+                                <span class="skills__name">Adobe Premiere Pro</span> <!-- İsim -->
+                            </div>
+                            <div class="skills__bar skills__pr"> <!-- Bar -->
+                            </div>
+                            <div>
+                                <span class="skills__percentage">80%</span> <!-- Yüzde -->
+                            </div>
+                        </div>
+                        <div class="skills__data"> 
+                            <div class="skills__names">
+                                <i class='bx bxl-adobe skills__icon'></i> <!-- Photoshop ikonu -->
+                                <span class="skills__name">Adobe Illustrator</span> <!-- İsim -->
+                            </div>
+                            <div class="skills__bar skills__ıl"> <!-- Bar -->
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span> <!-- Yüzde -->
+                            </div>
+                        </div>
+                        <div class="skills__data"> 
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <span class="skills__name">HTML 5</span> <!-- İsim -->
+                            </div>
+                            <div class="skills__bar skills__html"> <!-- Bar -->
+                            </div>
+                            <div>
+                                <span class="skills__percentage">70%</span> <!-- Yüzde -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>              
+                        <img src="assets/img/work3.jpg" alt="" class="skills__img"> <!-- Yetenek görseli -->
+                    </div>
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="work"> <!-- Projeler bölümü -->
+                <h2 class="section-title">Projeler</h2> <!-- Başlık -->
+
+                <div class="work__container bd-grid"> <!-- Proje görsel kapsayıcı -->
+                    <a href="https://www.adobe.com/tr/products/photoshop/free-trial-download.html?msockid=249174da9aa56064323d677a9b3c6172" target="_blank" class="work__img">
+                        <img  src="assets/img/1.jpg" alt=""> <!-- Proje 1 -->
+                    </a>
+                    <a href="https://www.adobe.com/tr/products/aftereffects/free-trial-download.html?msockid=249174da9aa56064323d677a9b3c6172" target="_blank" class="work__img">
+                        <img src="assets/img/2.jpg" alt=""> <!-- Proje 2 -->
+                    </a>
+                    <a href="https://www.adobe.com/tr/products/premiere.html?msockid=249174da9aa56064323d677a9b3c6172" target="_blank" class="work__img">
+                        <img src="assets/img/3.jpg" alt=""> <!-- Proje 3 -->
+                    </a>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact"> <!-- İletişim bölümü -->
+                <h2 class="section-title">İletişim</h2> <!-- Başlık -->
+
+                <div class="contact__container bd-grid"> <!-- Form kapsayıcı -->
+    <form action="mailto:akcaselman51@gmail.com" method="post" enctype="text/plain" class="contact__form"> <!-- İletişim formu -->
+        <input type="text" placeholder="İsim" name="isim" class="contact__input"> <!-- İsim alanı -->
+        <input type="email" placeholder="Email" name="email" class="contact__input"> <!-- Email alanı -->
+        <textarea name="mesaj" cols="30" rows="10" placeholder="Mesajınız" class="contact__input"></textarea> <!-- Mesaj alanı -->
+        <input type="submit" value="Gönder" class="contact__button button"> <!-- Gönder düğmesi -->
+    </form>
+</div>
+
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer"> <!-- Alt bilgi alanı -->
+            <p class="footer__title">Selman AKÇA</p> <!-- Site başlığı -->
+            <div class="footer__social"> <!-- Sosyal ikonlar kapsayıcısı -->
+                <a href="https://www.facebook.com/profile.php?id=100074209784466" target="_blank" class="footer__icon"><i class='bx bxl-facebook'></i></a> <!-- Facebook -->
+                <a href="https://www.instagram.com/slmn_a99/" target="_blank" class="footer__icon"><i class='bx bxl-instagram'></i></a> <!-- Instagram -->
+            </div>
+            <p class="footer__copy">&#169; Selman AKÇA. Tüm haklar saklıdır.</p> <!-- Telif hakkı metni -->
+        </footer>
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script> <!-- Scroll animasyonu kütüphanesi -->
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script> <!-- Ana JavaScript dosyası -->
+    </body>
+</html>
